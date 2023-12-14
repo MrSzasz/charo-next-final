@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --swiper-theme-color: white !important;
+}
+
+.swiper-pagination-bullet {
+  width: 2.5em !important;
+  height: 0.25em !important;
+  border-radius: 0 !important;
+}
+
+.image-gallery-icon {
+  color: rgb(144, 25, 49) !important;
+}
+.image-gallery-icon:hover {
+  color: rgb(144, 25, 49) !important;
+}
+
+.image-gallery-thumbnail:hover {
+  outline: none;
+  border: 4px solid rgb(144, 25, 49) !important;
+}
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  outline: none;
+  border: 4px solid rgb(144, 25, 49) !important;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: calc(92vh - 80px) !important;
+}
